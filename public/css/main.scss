@@ -1,5 +1,6 @@
 @import 'style-guide';
 @import 'header';
+@import 'components';
 
 *{
   margin: 0;
@@ -13,7 +14,12 @@
 
 body{
   background-color: $color-background;
-  color: #D8DBE3;
+  color: $color-text;
   font-family: $font-type;
+}
 
+
+a{
+  list-style-type: none;
+  text-decoration: none;
 }

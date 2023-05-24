@@ -14,11 +14,20 @@
   </head>
   <body>
     <nav id="navbar">
-      <h2>Node Todo</h2>
+      <img src="images/confirm.svg" alt="">
+      <div>
       <ul>
         <li><a href="/tasks">Ver todas</a></li>
-        <li><a href="/tasks/add">Criar</a></li>
+        <li>
+          <a class="btn" href="/tasks/add">
+          {{!-- <img src="images/icon-plus-white.svg" alt=""> --}}
+          <p>
+            Adicionar
+          </p>
+          </a>
+        </li>
       </ul>
+      </div>
     </nav>
     <div class="container">
       {{{ body }}}

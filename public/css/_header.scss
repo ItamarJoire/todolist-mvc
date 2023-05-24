@@ -1,5 +1,36 @@
-#navbar{
+@import 'style-guide';
+
+#navbar{  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
   height: 8rem;
-  padding: 2.8rem 0 0 0;
-  border-bottom: 1px solid #151B26;
+  border-bottom: 1px solid $border;
+
+  ul{
+    display: flex; 
+    list-style-type: none;
+  
+    li{
+      font: 400 1.8rem $font-type;
+
+      a{
+        color: $color-text;
+      }
+
+      p{
+        color: #FAFCFC;
+      }
+    }
+
+    .btn{
+      display: flex;
+      align-items: center;
+
+      padding: .6rem 1.6rem;
+      background: linear-gradient(224.78deg, #5390E3 8.12%, #1357B3 92.21%);
+      border-radius: 4px;
+    }
+  }
 }

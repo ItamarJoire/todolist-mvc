@@ -1,7 +1,29 @@
 #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   height: 8rem;
-  padding: 2.8rem 0 0 0;
   border-bottom: 1px solid #151B26;
+}
+#navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+#navbar ul li {
+  font: 400 1.8rem "Rubik", sans-serif;
+}
+#navbar ul li a {
+  color: #D8DBE3;
+}
+#navbar ul li p {
+  color: #FAFCFC;
+}
+#navbar ul .btn {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.6rem;
+  background: linear-gradient(224.78deg, #5390E3 8.12%, #1357B3 92.21%);
+  border-radius: 4px;
 }
 
 * {
@@ -18,4 +40,9 @@ body {
   background-color: #06090F;
   color: #D8DBE3;
   font-family: "Rubik", sans-serif;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
