@@ -1,0 +1,21 @@
+#navbar {
+  height: 8rem;
+  padding: 2.8rem 0 0 0;
+  border-bottom: 1px solid #151B26;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #06090F;
+  color: #D8DBE3;
+  font-family: "Rubik", sans-serif;
+}/*# sourceMappingURL=main.css.map */
