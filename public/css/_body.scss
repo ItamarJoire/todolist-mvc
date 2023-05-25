@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-top: 8rem;
 
   h1{
@@ -18,24 +17,60 @@
   }
 
   .task-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 70rem;
 
     .task-view{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
       .content-task{
         display: flex;
+        gap: 6px;
+        justify-content: space-between;
+
+        height: 12rem;
         margin-left: 1.6rem;
+        margin-bottom: 2rem;
+        padding: 3.2rem;
         
+        border: 1px solid #151B26;
+
+        .title{
+          color: $color-text;
+          font-size: 2rem;
+
+          max-width: 340px; // Limite maximo do texto
+          white-space: nowrap; // Removendo quebra de linha
+          overflow: hidden; // Removendo a barra de rolagem
+          text-overflow: ellipsis; // Adicionando "..." ao final do texto
+        }
+
         .actions{
           display: flex;
-          justify-content: space-around;
+          justify-content: flex-end;
+
+          .btn{
+            border: 1px solid $color-text;
+            border-radius: 2px;
+            
+            padding: .6rem;
+            margin-left: 1rem;
+            background-color: $color-background;
+            color: $color-text;
+            
+            transition: opacity .2s;
+          
+            &:hover{
+              opacity: .8;
+              cursor: pointer;
+            }
+          }
+
+          .btn-edit{
+            height: 2.89rem;
+          }
         }
       }
     } 
   }
 }
+

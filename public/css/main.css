@@ -51,22 +51,47 @@
   font-size: 1.4rem;
 }
 .container-all .task-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container-all .task-list .task-view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 2rem;
+  width: 80%;
+  max-width: 70rem;
 }
 .container-all .task-list .task-view .content-task {
   display: flex;
+  gap: 6px;
+  justify-content: space-between;
+  height: 12rem;
   margin-left: 1.6rem;
+  margin-bottom: 2rem;
+  padding: 3.2rem;
+  border: 1px solid #151B26;
+}
+.container-all .task-list .task-view .content-task .title {
+  color: #D8DBE3;
+  font-size: 2rem;
+  max-width: 340px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .container-all .task-list .task-view .content-task .actions {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+}
+.container-all .task-list .task-view .content-task .actions .btn {
+  border: 1px solid #D8DBE3;
+  border-radius: 2px;
+  padding: 0.6rem;
+  margin-left: 1rem;
+  background-color: #06090F;
+  color: #D8DBE3;
+  transition: opacity 0.2s;
+}
+.container-all .task-list .task-view .content-task .actions .btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.container-all .task-list .task-view .content-task .actions .btn-edit {
+  height: 2.89rem;
 }
 
 * {
