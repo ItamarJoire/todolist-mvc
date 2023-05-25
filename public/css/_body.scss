@@ -1,0 +1,41 @@
+.container-all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 8rem;
+
+  h1{
+    font-size: 2.4rem;
+  }
+
+  .task-empty{
+    margin-top: 1.6rem;
+
+    p{
+      font-size: 1.4rem;
+    }
+  }
+
+  .task-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .task-view{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .content-task{
+        display: flex;
+        margin-left: 1.6rem;
+        
+        .actions{
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+    } 
+  }
+}

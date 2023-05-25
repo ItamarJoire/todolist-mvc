@@ -1,29 +1,72 @@
 #navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 8rem;
   border-bottom: 1px solid #151B26;
 }
+#navbar a {
+  color: #D8DBE3;
+}
+#navbar h1 {
+  font-size: 3rem;
+}
 #navbar ul {
   display: flex;
+  align-items: center;
   list-style-type: none;
 }
 #navbar ul li {
   font: 400 1.8rem "Rubik", sans-serif;
+  transition: opacity 0.3s;
 }
 #navbar ul li a {
   color: #D8DBE3;
 }
-#navbar ul li p {
-  color: #FAFCFC;
+#navbar ul li:hover {
+  opacity: 0.8;
 }
 #navbar ul .btn {
   display: flex;
   align-items: center;
+  margin-left: 2.6rem;
   padding: 0.6rem 1.6rem;
   background: linear-gradient(224.78deg, #5390E3 8.12%, #1357B3 92.21%);
   border-radius: 4px;
+}
+
+.container-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+}
+.container-all h1 {
+  font-size: 2.4rem;
+}
+.container-all .task-empty {
+  margin-top: 1.6rem;
+}
+.container-all .task-empty p {
+  font-size: 1.4rem;
+}
+.container-all .task-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-all .task-list .task-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-all .task-list .task-view .content-task {
+  display: flex;
+  margin-left: 1.6rem;
+}
+.container-all .task-list .task-view .content-task .actions {
+  display: flex;
+  justify-content: space-around;
 }
 
 * {
@@ -33,7 +76,7 @@
 }
 
 :root {
-  font-size: 62.5%;
+  font-size: 60.5%;
 }
 
 body {

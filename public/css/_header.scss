@@ -3,13 +3,22 @@
 #navbar{  
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   height: 8rem;
   border-bottom: 1px solid $border;
 
+  a{
+    color: $color-text;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+
   ul{
     display: flex; 
+    align-items: center;
     list-style-type: none;
   
     li{
@@ -19,8 +28,10 @@
         color: $color-text;
       }
 
-      p{
-        color: #FAFCFC;
+      transition: opacity .3s;
+
+      &:hover{
+        opacity: .8;
       }
     }
 
@@ -28,6 +39,7 @@
       display: flex;
       align-items: center;
 
+      margin-left: 2.6rem;
       padding: .6rem 1.6rem;
       background: linear-gradient(224.78deg, #5390E3 8.12%, #1357B3 92.21%);
       border-radius: 4px;
