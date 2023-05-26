@@ -1,12 +1,12 @@
-<h1>Criando uma task</h1>
-<form action="/tasks/add" method="POST">
-  <div class="form-control">
-    <label for="title">Título:</label>
-    <input type="text" name="title" placeholder="O que você vai fazer?">
-  </div>
-  <div class="form-control">
-    <label for="description">Descrição:</label>
-    <textarea type="text" name="description" placeholder="O que você vai fazer?"></textarea>
-  </div>
-  <input type="submit" value="Criar">
-</form>
+  <div class="container-inputs">
+    <h1>Crie sua tarefa</h1>
+    <form action="/tasks/add" method="POST">
+      <div>
+        <input class="forms" type="text" name="title" placeholder="Nome da tarefa" maxlength="30">
+      </div>
+      <div >
+        <textarea class="forms form-area" type="text" name="description" placeholder="Descreva a tarefa" maxlength="70"></textarea>
+      </div>
+      <input class="btn-primary" type="submit" value="Adicionar">
+    </form>
+</div>

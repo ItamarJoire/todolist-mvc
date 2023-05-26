@@ -74,3 +74,43 @@
   }
 }
 
+// FORMULÁRIOS
+.container-inputs{
+  text-align: center;
+  margin-top: 8rem;
+  
+  h1{
+    font-size: 2.4rem;
+    margin-bottom: 2.6rem;
+  }
+}
+
+.forms{
+  @include form-container()
+}
+
+.forms::placeholder{
+  font-size: 1.6rem;
+}
+
+.form-area{
+  font-family: $font-type;
+  
+  height: 7.8rem;
+
+  margin-top: 1.6rem;
+  padding:  1.6rem;
+
+  resize: none;
+  
+}
+
+.btn-primary{
+  margin-top: 2.4rem;
+
+  @include button-primary();
+}
+
+
+
+
