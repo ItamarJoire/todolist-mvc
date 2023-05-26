@@ -1,9 +1,15 @@
 const { Sequelize } = require('sequelize')
+const account = require('./config')
 
-const sequelize = new Sequelize('nodemvc2', 'root', '', {
-  host: 'localhost',
-  dialect: 'mysql'
-})
+const sequelize = new Sequelize(
+  account.database,
+  account.username,
+  account.password,
+  {
+    host: account.host,
+    dialect: 'mysql'
+  }
+)
 
 try {
   sequelize.authenticate()
