@@ -24,3 +24,7 @@ a{
   text-decoration: none;
 }
 
+.title.done {
+  text-decoration: line-through;
+  opacity: .2;
+}

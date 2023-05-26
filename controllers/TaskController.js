@@ -71,7 +71,7 @@ module.exports = class TaskController {
       done: req.body.done === '0' ? true : false
     }
 
-    console.log(task)
+    console.log(task.done)
 
     Task.update(task, { where: { id: id } })
       .then(res.redirect('/tasks'))
