@@ -1,4 +1,4 @@
-<h1 align="center"> TodoList></h1>
+<h1 align="center">TodoList</h1>
 
 
 &nbsp;
@@ -10,8 +10,7 @@
 &nbsp;
   
 ## Layout :bookmark:
-  <img src="https://github.com/ItamarJoire/site-turism/blob/master/src/assets/images/mockup.png" >
-  
+  <img src="https://github.com/ItamarJoire/todolist-mvc/blob/master/public/images/todo.gif" align="center">
   
 &nbsp;
   
