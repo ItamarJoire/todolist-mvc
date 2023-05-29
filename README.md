@@ -30,7 +30,7 @@ Crie um arquivo .env com as informações do seu banco as seguintes variáveis d
 Para instalar as dependências execute o comando: `npm install`
 
 Para dar start na aplicação web execute: `npm start`
-  - Uma vez que o comando é dado ele irá levantar o servidor que pode ser acessado pela url: http://localhost:3000/
+  - Uma vez que o comando é dado ele irá levantar o servidor que pode ser acessado pela url: http://localhost:3000/tasks
 
 
 &nbsp;
